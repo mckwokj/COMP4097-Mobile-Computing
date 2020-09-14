@@ -3,29 +3,29 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/newsListFragment">
 
-    <fragment
-        android:id="@+id/navigation_home"
-        android:name="com.example.infoday.ui.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" >
-        <action
-            android:id="@+id/action_navigation_home_to_infoFragment"
-            app:destination="@id/infoFragment" />
-    </fragment>
+<!--    <fragment-->
+<!--        android:id="@+id/navigation_home"-->
+<!--        android:name="com.example.infoday.ui.home.HomeFragment"-->
+<!--        android:label="@string/title_home"-->
+<!--        tools:layout="@layout/fragment_home" >-->
+<!--        <action-->
+<!--            android:id="@+id/action_navigation_home_to_infoFragment"-->
+<!--            app:destination="@id/infoFragment" />-->
+<!--    </fragment>-->
 
-    <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.example.infoday.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+<!--    <fragment-->
+<!--        android:id="@+id/navigation_dashboard"-->
+<!--        android:name="com.example.infoday.ui.dashboard.DashboardFragment"-->
+<!--        android:label="@string/title_dashboard"-->
+<!--        tools:layout="@layout/fragment_dashboard" />-->
 
-    <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.example.infoday.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+<!--    <fragment-->
+<!--        android:id="@+id/navigation_notifications"-->
+<!--        android:name="com.example.infoday.ui.notifications.NotificationsFragment"-->
+<!--        android:label="@string/title_notifications"-->
+<!--        tools:layout="@layout/fragment_notifications" />-->
     <fragment
         android:id="@+id/mapsFragment"
         android:name="com.example.infoday.MapsFragment"
@@ -34,5 +34,15 @@
     <fragment
         android:id="@+id/infoFragment"
         android:name="com.example.infoday.ui.info.infoFragment"
-        android:label="infoFragment" />
+        android:label="@string/title_info" />
+    <fragment
+        android:id="@+id/eventFragment"
+        android:name="com.example.infoday.ui.events.EventFragment"
+        android:label="@string/title_events"
+        tools:layout="@layout/fragment_event_list" />
+    <fragment
+        android:id="@+id/newsListFragment"
+        android:name="com.example.infoday.ui.news.NewsListFragment"
+        android:label="@string/title_news"
+        tools:layout="@layout/fragment_news_list" />
 </navigation>
